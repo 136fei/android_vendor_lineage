@@ -47,3 +47,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
 
+# 136fei
+-include vendor/136fei/blobs.mk
+

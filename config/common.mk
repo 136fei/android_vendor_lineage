@@ -90,6 +90,10 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml \
     vendor/lineage/config/permissions/privapp-permissions-lineage.xml:system/etc/permissions/privapp-permissions-lineage.xml
 
+# Phonelocation!
+PRODUCT_COPY_FILES +=  \
+    vendor/lineage/prebuilt/common/media/location/suda-phonelocation.dat:system/media/location/suda-phonelocation.dat
+
 # Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
 
@@ -132,11 +136,10 @@ PRODUCT_PACKAGES += \
     LineageSettingsProvider \
     LineageSetupWizard \
     Eleven \
+    PhoneLocationProvider \
     ExactCalculator \
-    Jelly \
     LockClock \
     Trebuchet \
-    Updater \
     WallpaperPicker \
     WeatherProvider
 
